@@ -1,0 +1,12 @@
+<p>parent works!</p>
+<!-- <app-child [products]="salesProduct">
+    <h3 class="header">sales product</h3> <a href="" class="link">go to next</a>
+</app-child>
+<app-child [products]="newProduct">
+    <h3 class="header">new product</h3> <a href="" class="link">go to next</a>
+</app-child> -->
+
+<button (click)="toggleChild()">toggle child</button><br><br>
+<input type="text" [(ngModel)]="uname">
+{{uname}}
+<app-child *ngIf="flag"[uname]="uname"></app-child>
